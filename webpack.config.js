@@ -5,17 +5,20 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: "/",
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.?(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'], // Add the file extensions to resolve
   },
   devServer: {
     port: 3010, // default 8000

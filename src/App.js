@@ -1,6 +1,7 @@
 import React  from 'react';
+import ToDoListWithFilterTask from "./project3/ToDoListWithFilter"
 
 function App() {
-return <h1>Hello React!!</h1>
+    return <ToDoListWithFilterTask/>
 }
 export default App;
