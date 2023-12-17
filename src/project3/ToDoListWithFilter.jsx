@@ -100,7 +100,7 @@ const ToDoListWithFilterTask = () => {
                 {item.name}
                 <button onClick={() => removeTask(item.id)}>Delete</button>
               </span>
-            </>
+            </> 
           );
         })}
       </div>
