@@ -98,7 +98,7 @@ const ToDoListWithFilterTask = () => {
                   onChange={() => toggleCompletion(item.id)}
                 ></input>
                 {item.name}
-                <button onClick={() => removeTask(item.id)}>Delete Item</button>
+                <button onClick={() => removeTask(item.id)}>Delete Button</button>
               </span>
             </> 
           );
